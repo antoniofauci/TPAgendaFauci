@@ -1,2 +1,14 @@
-Ecrire ici votre réponse à la question UML.
+Les deux solutions présentent des différences. La première solution, celle développée ici, met l'accent sur la modularité, en séparant les responsabilités
+ dans plusieurs classes comme Repetition et Termination. Cela permet une meilleure flexibilité : on peut plus facilement modifier ou étendre les règles de
+ répétition ou de terminaison sans altérer la classe Event. Cependant, cette approche est plus complexe à utiliser, elle nécessite de manipuler plusieurs
+ objets pour créer un événement avec des fonctionnalités avancées.
 
+
+La deuxième solution est plus simple et intuitive. Elle utilise des sous-classes comme RepetitiveEvent ou FixedTerminationEvent, ce qui rend la création
+d'événements plus directe. Par exemple, si l’on veut un événement répétitif avec une date de fin, il suffit d’utiliser directement FixedTerminationEvent.
+Cette approche convient bien pour des besoins simples, mais elle est moins flexible. Si on souhaite ajouter des règles plus complexes, cela risque de rendre
+le code rigide.
+
+
+En résumé, la première solution est plus adaptée aux projets complexes grâce à sa flexibilité. La seconde solution est plus simple et intuitive, elle est donc
+préférable pour des projets plus simples nécessitant une prise en main rapide.
